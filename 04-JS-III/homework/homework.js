@@ -71,6 +71,14 @@ function dePalabrasAFrase(palabras) {
   // Tu código:
  
   return palabras.join(' ');
+
+  //var frase = '';
+  //for (var i = 0: i < palabras.length; i++) {
+  //if (palabras[i] === palabras[palabras.length-1])
+  //frase = frase + palabras[i]
+  //else
+  //frase = frase + palabras[i] + ' ';
+  //} return frase
 }
 
 
@@ -142,8 +150,9 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   
-  if (arguments.length < 1) return 0;
-  
+  if (arguments.length < 1) {
+    return 0;
+  }
   var total = 1;
   
   for (var i = 0; i < arguments.length; i++) {
@@ -165,6 +174,7 @@ function cuentoElementos(arreglo){
     }
   }
   return mayores;
+  //var contador - contador++ 
 }
 
 
@@ -194,6 +204,9 @@ function empiezaConNueve(n) {
     return true
   }
   return false
+  //var a = string(n)[0]
+  //if (number(a) === 9) return true
+  //return false
 }
 
 
