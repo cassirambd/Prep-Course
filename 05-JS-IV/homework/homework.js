@@ -76,7 +76,7 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código:
 
-  if (usuario.email != undefined) {
+  if (usuario.email != null || usuario.email != undefined) {
     return true;
   }
   return false;
@@ -95,6 +95,9 @@ function tienePropiedad(objeto, propiedad) {
   } else {
     return false;
  }
+
+ //if(objeto.hasOwnProperty(propiedad)) return true
+ //return false 
 }
 
 function verificarPassword(usuario, password) {
@@ -150,6 +153,8 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
 
+  //console.log('lo que llega', usuario);
+
   var suma = 0;
 
   for (var i = 0; i < usuario.posts.length; i++) {
@@ -173,6 +178,11 @@ function agregarMetodoCalculoDescuento(producto) {
     return this.precio - ( this.precio * this.porcentajeDeDescuento );
   };
   return producto;
+
+  //producto.calcularPrecioDescuento = function() {
+  //return producto.precio - ( producto.precio * producto.porcentajeDeDescuento );
+  //};
+  //return producto;
 }
 
 // No modificar nada debajo de esta línea
