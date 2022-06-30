@@ -89,7 +89,7 @@ function filter(array) {
       nuevoArray.push(array[i])
     }
   }
-  return nuevoArray;
+  return nuevoArray; 
 }
 
 // var nuevoArray = [];
